@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أجمل الوجهات السياحية في العالم</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .tt {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            max-width: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h2 {
+            color: #333;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .card p {
+            color: #777;
+            font-size: 16px;
+            padding: 0 10px 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .button {
+            background-color: #008cba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact, .about {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+        }
+        .contact h2, .about h2 {
+            color: #008cba;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .contact p, .about p {
+            color: #777777;
+            font-size: 18px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #008cba;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function toggleCards() {
+            var extraCards = document.querySelectorAll('.extra');
+            var buttonContainer = document.querySelector('.button-container');
+            var button = document.getElementById('toggleButton');
+            extraCards.forEach(card => {
+                card.classList.toggle('hidden');
+            });
+            if (button.innerHTML === 'عرض المزيد') {
+                button.innerHTML = 'عرض أقل';
+                buttonContainer.classList.add('hidden');
+                setTimeout(function() {
+                    document.querySelector('.container').appendChild(buttonContainer);
+                    buttonContainer.classList.remove('hidden');
+                }, 200);
+            } else {
+                button.innerHTML = 'عرض المزيد';
+                buttonContainer.classList.add('hidden');
+                setTimeout(function() {
+                    document.querySelector('.container').appendChild(buttonContainer);
+                    buttonContainer.classList.remove('hidden');
+                }, 200);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>أجمل الوجهات السياحية في العالم</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <img src="https://mousafir.net/wp-content/uploads/2023/08/paris-france.webp" alt="باريس، فرنسا">
+                <h2>باريس، فرنسا</h2>
+                <p>باريس هي عاصمة فرنسا وواحدة من أشهر المدن في العالم. تتميز المدينة بهندستها المعمارية الرائعة، بما في ذلك برج إيفل وكاتدرائية نوتردام. كما أنها موطن للعديد من المتاحف والمعارض الفنية، مثل متحف اللوفر ومتحف أورسيه.</p>
+            </div>
+            <div class="card">
+                <img src="https://mousafir.net/wp-content/uploads/2023/08/rome-italy.webp" alt="روما، إيطاليا">
+                <h2>روما، إيطاليا</h2>
+                <p>روما هي عاصمة إيطاليا وواحدة من أقدم المدن في العالم. تتميز المدينة بهندستها المعمارية الرومانية القديمة، بما في ذلك الكولوسيوم والمنتدى الروماني. كما أنها موطن للعديد من المتاحف والمعارض الفنية، مثل متحف الفاتيكان ومتحف روما الوطنية.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <img src="https://mousafir.net/wp-content/uploads/2023/08/Phang-Nga-Bay-Phuket-Thailand-768x480.webp" alt="بوكيت، تايلاند">
+                <h2>بوكيت، تايلاند</h2>
+                <p>بوكيت هي جزيرة في تايلاند وواحدة من أكثر الوجهات السياحية شعبية في العالم. تشتهر الجزيرة بشواطئها الرملية البيضاء ومياهها الفيروزية. كما أنها موطن للعديد من المنتجعات والفنادق والمطاعم.</p>
+            </div>
+            <div class="card">
+                <img src="https://mousafir.net/wp-content/uploads/2023/08/berlin-768x448.webp" alt="برلين، ألمانيا">
+                <h2>برلين، ألمانيا</h2>
+                <p>برلين هي عاصمة ألمانيا وواحدة من أكثر المدن تنوعًا في العالم. تتميز المدينة بهندستها المعمارية الحديثة، بما في ذلك جدار برلين وبوابة براندنبورغ. كما أنها موطن للعديد من المتاحف والمعارض الفنية، مثل متحف برلين الوطني ومتحف الفن الحديث.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="toggleButton" class="button" onclick="toggleCards()">عرض المزيد</button>
+        </div>
+        <div class="row extra hidden">
+            <div class="card">
+                <img src="https://mousafir.net/wp-content/uploads/2023/08/london.webp" alt="لندن، المملكة المتحدة">
+                <h2>لندن، المملكة المتحدة</h2>
+                <p>لندن هي عاصمة المملكة المتحدة وواحدة من أقدم المدن في العالم. تتميز المدينة بهندستها المعمارية التاريخية، بما في ذلك برج لندن وقصر باكنغهام. كما أنها موطن للعديد من المتاحف والمعارض الفنية، مثل متحف بريتيش ميوزيم ومتحف فيكتوريا وألبرت.</p>
+            </div>
+            <div class="card">
+                <img src="https://mousafir.net/wp-content/uploads/2023/08/Shanghai-shopping-street-night-1000x667-1-768x512.webp" alt="شنغهاي، الصين">
+                <h2>شنغهاي، الصين</h2>
+                <p>شنغهاي هي مدينة ساحلية في الصين وواحدة من أكثر المدن ازدحامًا بالسكان في العالم. تتميز المدينة بهندستها المعمارية الحديثة، بما في ذلك برج شنغهاي وساحة الشعب. كما أنها موطن للعديد من المتاجر والمطاعم والكافيهات.</p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="tt">
+        <div class="contact">
+            <h2>تواصل معنا</h2>
+            <p>الهاتف: +967771768949</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">فيسبوك</a>
+                <a href="https://instagram.com" target="_blank">إنستغرام</a>
+            </div>
+        </div>
+        <div class="about">
+            <h2>نبذة عنا</h2>
+            <p>هذا الموقع تم تطويره بواسطة محمد أحمد جعبوس، مطور ويب محترف يتمتع بخبرة في إنشاء وتصميم المواقع الإلكترونية المبتكرة. هدفنا هو تقديم محتوى ممتع ومفيد للزوار.</p>
+        </div>
+    </div>
+</body>
+</html>
